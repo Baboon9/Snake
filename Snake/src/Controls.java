@@ -4,6 +4,7 @@ public class Controls {
 
 	private Hero hero;
 	private Snake snake;
+	private int test = 0;
 	
 	public Controls(Hero hero, Snake snake){
 		this.snake = snake;
@@ -26,6 +27,6 @@ public class Controls {
 		
 		} else if(Keyboard.isKeyDown(Keyboard.KEY_RETURN)){
 			snake.restart();
-		}
+		} 
 	}
 }

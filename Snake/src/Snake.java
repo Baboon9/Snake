@@ -132,7 +132,7 @@ public class Snake{
 		hero.resize();
 		score.resize();
 		score.reposition(hero);
-		ticker.speed /= 1.4;
+		ticker.speed /= 1.5;
 	}
 
 

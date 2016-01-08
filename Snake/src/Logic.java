@@ -10,7 +10,7 @@ public class Logic {
 	
 	private TickerAdapter listener = new TickerAdapter(){
 		public void nextTick(TickerEvent e){
-			if(hero.length - 2 > Math.pow(snake.SQUARE_WIDTH, 2)/2) snake.nextLevel();
+			if(hero.length - 2 > Math.pow(snake.SQUARE_WIDTH, 2)/2-(snake.LEVEL-1)*5) snake.nextLevel();
 			hero.move();			
 			if(hero.body.get(hero.tailPointer).intersects(score)){
 				growXPos = score.getXIncrementalPostion();
