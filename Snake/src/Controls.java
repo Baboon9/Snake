@@ -4,7 +4,6 @@ public class Controls {
 
 	private Hero hero;
 	private Snake snake;
-	private int test = 0;
 	
 	public Controls(Hero hero, Snake snake){
 		this.snake = snake;

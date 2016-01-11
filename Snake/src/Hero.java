@@ -48,13 +48,13 @@ public class Hero {
 		body.add(new Square(xPos, yPos+1));
 	}
 	
-	public void draw(){
+	public synchronized void draw(){
 		for(Square each : body){
 			each.draw();
 		}
 	}
 	
-	public void grow(int xPos, int yPos){
+	public synchronized void grow(int xPos, int yPos){
 		body.add(new Square(xPos, yPos));
 		length++;
 
